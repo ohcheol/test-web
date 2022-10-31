@@ -1,0 +1,364 @@
+
+*{ 
+  margin: 0;
+ padding: 0;
+}
+a{ color: #222; 
+  text-decoration: none;
+  font-family:  'Noto Sans KR'
+}
+li{
+  list-style: none;
+}
+img{
+  outline: none;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body { 
+  width: 100%;
+}
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+html {
+  overflow-x: hidden;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  width:200px;
+  height: 200px;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 999;
+}
+
+.modals {
+  width: 100%;
+}
+.modals h2 {
+  font-size: 3rem;
+  padding:20px 100px;
+}
+.modals img{
+  float: left;
+  width: 33%;
+  padding: 1%;
+}
+.container {
+  position: relative;
+  top: 100px;
+}
+.container h2 {
+  font-size: 3rem;
+  padding:20px 100px;
+}
+
+.btn{
+  margin-top: 40px;
+  width: 500px;
+  float: right;
+  margin-right: 60px;
+  
+}
+.btn > button {
+  text-align: center;
+  width: 120px;
+  height: 100px;
+  margin: 10px;
+  background-color: #000;
+  border-radius: 50px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+
+.btn > button:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 90%;
+  width: 140%;
+  background: #fffb01;
+  transition: all .5s ease-in-out;
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+.btn > button:hover:after {
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+  .btn > button:nth-child(1):after {
+    background: #fffb01;
+  }
+  .btn > button:nth-child(2):after {
+    background: red;
+  }
+  .btn > button:nth-child(3):after {
+    background: black;
+  }
+  .btn > button:nth-child(3):after {
+    background-color: #333;
+  }
+  .btn > button:nth-child(4):after {
+    background: skyblue;
+  }
+  .btn > button:nth-child(5):after {
+    background: white;
+  }
+  .btn > button:nth-child(6):after {
+    background: green;
+  }
+  .btn > button:nth-child(7):after {
+    background: navy;
+  }
+
+/* slider */
+
+.slick {
+  top:80px;
+   width: 100%;
+  height: auto;
+  background-position: center bottom;
+  background-size:contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+  overflow:hidden;
+  position: absolute;
+  padding-left: 0;
+  }
+
+  .slick img {
+    position: relative;
+   width: 100%;
+   display: block;
+  }
+
+  .slick-next {
+   right:20px;
+   background-image: url(../img/next.png);
+  }
+  .slick-prev{
+   left: 20px;
+   background-image: url(../img/pre.png);
+  }
+  .slick-prev,
+  .slick-next
+  {
+    top:40%;
+    position: absolute;
+    z-index: 999;
+    width:50px;
+    height: 50px;
+    background-color:#fff;
+    border:0;
+    background-size: 20px;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: all 0.5s;
+   }
+ 
+   .slick:hover button
+   {
+    opacity: 1;
+   }
+  .slick-dots{
+    display: none!important;
+  }
+
+  canvas {
+    position: relative;
+    top: 200px;
+    left: 50%;
+    transform:translateX(-45%) ;
+    max-width: 110vw;
+    max-height: 100vh;
+
+    display: block;
+  }
+  .handle {
+    position: relative;
+    background-color: #000;
+
+  }
+
+  .footer{
+    height: 2000px;
+    position: relative;
+    background-color: #fff;
+    color:#000
+  }
+  #ha {
+
+    height: 1700px;
+
+  }
+ 
+
+  body { margin: 0; }
+  .fixed { position: fixed; transition: all 1s; }
+  
+  .content2 {
+    position: relative;
+    width: 100%;
+    height: 3000px;
+    top: 700px;
+    background-color: black;
+  }
+  .center__inner {
+    position:relative;
+    width: 100%;
+    height:100vh;
+    background-image: url(../img/porsche-normal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+  }
+
+
+/*  스크롤 fade-in */
+.hidden {
+  opacity: 0;
+}
+
+.center__inner ul {
+  position: absolute;
+  top: 20%;
+  left:10%;
+}
+.center__inner li {
+  border: 2px solid #fff;
+  width: 200px;
+  height: 50px;
+  margin: 20px 0;
+  cursor: pointer;
+  line-height: 45px;
+}
+.fa-caret-right {
+  position: relative;
+  top:4px;
+  padding-right: 5px;
+}
+.center__inner a {
+  font: 16px sans-serif;
+  padding:0 10px;
+}
+
+
+.center__inner li:hover {
+  transform: translateX(20%) scale(1.2);
+  transition:all 0.5s;
+  background-color: rgba(255, 255, 255, 0.372);
+}
+.fade-in {
+  animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+from {
+  opacity: 0; transform: translateX(-50%);
+  background-color: #000;
+}
+to {
+  opacity: 1;
+}
+}
+
+
+/* bx슬라이드 */
+
+.wrap {
+  position: absolute;
+  width: 900px;
+  display: block;
+  top: 26%;
+  margin-left: 50%;
+  left: -450px;
+}
+.boxs {
+   background-color: #000;
+}
+.nv {
+  border: 1px solid #fff;
+  padding:10px;
+}
+
+
+.center__inner2 {
+  position:relative;
+  width: 100%;
+  height:100vh;
+  background-image: url(../img/f2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  top: 450px;
+}
+
+#box-inner2 {
+  position: absolute;
+  width: 500px;
+  top: 60%;
+  left: 10%;
+  font-size: 18px;
+}
+
+.center__inner3 {
+  position:relative;
+  background-color: #000;
+  display: block;
+  top: 450px;
+  padding-left: 10px;
+}
+
+#r1,
+#r2 { background-color: #000;}
+#r1 img { width:750px; padding: 10px;}
+#r2 img { width:750px; padding: 10px; }
+
+
+@media screen and (max-height: 600px) {
+  .wrap {
+    top: 18%; }
+}
+@media screen and (max-width: 1300px) {
+  .btn{
+    margin-top:70px;
+    width: 400px;
+    float: right;
+    margin-right: -10px;
+  }
+  .btn > button {
+    width: 80px;
+    height: 70px;
+
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .btn{
+    margin-top: 40px;
+    width: 400px;
+    float: right;
+    margin-right: -30px;
+  }
+  .slick-next,
+  .slick-prev
+  {
+    top:30%;}
+    .btn{
+      margin-top:20px;
+      width: 300px;
+      float: right;
+    }
+}

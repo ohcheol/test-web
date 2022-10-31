@@ -1,0 +1,146 @@
+svg {
+	pointer-events: none;
+}
+
+/* Demo 1 */
+
+.demo-drawings figcaption {
+	margin: 0 auto 0 auto;
+	max-width: 40em;
+	width: 95%;
+	text-align: center;
+}
+
+.demo-drawings figure:first-child figcaption {
+	margin-top: 8em;
+	display: block;;
+}
+
+.demo-drawings figcaption h2 {
+	font-weight: 300;
+	font-size: 3em;
+	margin-bottom: 0.2em;
+}
+
+.demo-drawings figcaption p {
+	font-size: 1.3em;
+}
+
+.drawings {
+	position: relative;
+	max-height: 600px;
+}
+
+.illustration {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-height: 100%;
+	max-width: 100%;
+	opacity: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.show {
+	opacity: 1;
+}
+
+.hide {
+	opacity: 0;
+}
+
+.line-drawing,
+.illustration {
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+
+.line-drawing path {
+	fill: none;
+	stroke: white;
+	stroke-width: 20;
+}
+.car {
+	position: relative;
+}
+.car > img {
+	position:absolute;
+	width: 900px;
+	margin-left:50%;
+	left:-350px;
+} 
+#mad
+{
+	position: relative;
+  margin:0;
+	padding:0;
+  top:-420px;
+	left:-100px;
+	}
+	.container{
+		margin-top: 180px;
+	}
+
+
+path.line-round {
+	stroke-linecap: round;
+}
+
+path.stroke-medium {
+	stroke-width: 2;
+}
+
+path.stroke-thin {
+	stroke-width: 1;
+}
+
+@media screen and (max-width: 1500px) {
+	.demo-loading .headline h1 {
+		font-size: 1.4em;
+	}
+	.car > img {
+		position:absolute;
+		top: 220px;
+		width: 50%;
+		margin:0;
+		 left:400px;
+	}
+	#mad
+{
+	position: relative;
+	margin:0;
+	padding:0;
+	width: 120%;
+  margin-top: -10% !important;
+  left:50px;
+	}
+
+
+}
+@media screen and (max-width: 1100px) {
+	.car > img {
+		position:absolute;
+		top: 150px;
+		width: 50%;
+		margin:0;
+		 left:30%;
+	}
+	#mad
+{
+	position: relative;
+  margin:0;
+	padding:0;
+	width: 120%;
+  margin-top: -20% !important;
+  left:-5px;
+	}
+
+}
+@media screen and (max-width: 780px) {
+	#mad{
+		margin-top: -35% !important;
+	}
+	
+}

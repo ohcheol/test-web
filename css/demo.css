@@ -1,0 +1,63 @@
+.demo-drawings body {
+	background: #000;
+	color: #fff;
+}
+
+.demo-drawings a {
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+}
+
+.demo-drawings a:hover, a:focus {
+	color: red;
+	outline: none;
+	transition: all 0.5s;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.codrops-header,
+.codrops-top {
+	font-family: 'Lato', Arial, sans-serif;
+}
+
+.codrops-header {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.box-header {
+  position: relative;
+  width: 800px;
+	height: 100px;;
+	top: -150px;
+	left: 100px;
+  text-align: left;
+  z-index: 99999;
+}
+
+.box-header h2 {
+	font-size: 3rem;
+	display: inline;
+}
+
+.box-header h3 {
+	padding-left: 24px;
+}
+.box-header i {
+	color : red
+}
+ @media screen and (max-width: 1000px ){
+	.box-header{
+		top:-120px;
+		left: 40px;
+     font-size: 1rem;
+	}
+	.box-header h2 {
+		font-size: 2.5rem;
+	}
+ }
